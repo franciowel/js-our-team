@@ -26,11 +26,32 @@ const userData = [
         username : 'Angela Caroll',
         job : 'Chief Editor',
     },
+    {
+        img : 'walter-gordon-office-manager.jpg',
+        username : 'Walter Gordon',
+        job : 'Office Manager',
+    },
+    {
+        img : 'angela-lopez-social-media-manager.jpg',
+        username : 'Angela Lopez',
+        job : 'Social Media Manager',
+    },
+    {
+        img : 'scott-estrada-developer.jpg',
+        username : 'Scott Estrada',
+        job : 'Developer',
+    },
+    {
+        img : 'barbara-ramos-graphic-designer.jpg',
+        username : 'Barbara Ramos',
+        job : 'Grapfic Designer',
+    }
 ]
 
 // PARTE LOGICA
 // uso un ciclo for per stampare gli oggetti contenuti nell'array
 // il ciclo prosegue fin tutta la lunghezza dell'array
+
 for(let i = 0; i < userData.length; i++) {
     let thisUser = userData[i];
     const classDraw = `
@@ -50,3 +71,9 @@ for(let i = 0; i < userData.length; i++) {
     `
     cardContain.innerHTML += classDraw
 }
+
+// BONUS:
+// Utilizzare gli input presenti nella pagina per permettere all'utente di aggiungere 
+// nuovi membri del team: cliccando sul pulsante "add" viene creato un nuovo oggetto, 
+// il quale viene inserito nell'array iniziale e viene stampata una nuova card con 
+// tutte le informazioni inserite dall'utente.
